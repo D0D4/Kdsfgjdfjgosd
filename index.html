@@ -3,28 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Selector</title>
+    <title>My Proxy Website</title>
+    <style>
+        /* Optional: Add some basic styling to the iframe */
+        iframe {
+            width: 100%;
+            height: 500px; /* Set the desired height for the iframe */
+            border: none; /* Remove iframe border */
+        }
+    </style>
 </head>
 <body>
-    <label for="websiteSelect">Select a website:</label>
-    <select id="websiteSelect">
-        <option value="https://watch.lonelil.com">movies</option>
-    </select>
-    <br><br>
-    <iframe id="websiteFrame" src="" width="800" height="600" frameborder="0"></iframe>
-
-    <script>
-        // Get the select element
-        const select = document.getElementById('websiteSelect');
-
-        // Get the iframe element
-        const iframe = document.getElementById('websiteFrame');
-
-        // Listen for changes in the select element
-        select.addEventListener('change', function() {
-            // Set the src attribute of the iframe to the selected value
-            iframe.src = this.value;
-        });
-    </script>
+    <iframe src="/api/page-to-proxy"></iframe>
+    <!-- Replace "/api/page-to-proxy" with the path you configured in your proxy rules -->
 </body>
 </html>
