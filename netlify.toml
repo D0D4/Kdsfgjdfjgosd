@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/api/*"
-  to = "https://example.com/api/:splat"
+  to = "https://watch.lonelil.com:splat"
   status = 200
